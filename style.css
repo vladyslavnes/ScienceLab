@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	word-wrap: break-word;
+}
+
+html, body {
+	height: 100%;
+}
+
+.thin {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 675px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 35px 0 35px 30px;
+	background: -webkit-gradient(linear,left top, left bottom,from(#769715),to(#99cc01));
+	background: -webkit-linear-gradient(#769715,#99cc01);
+	background: -o-linear-gradient(#769715,#99cc01);
+	background: linear-gradient(#769715,#99cc01);
+}
+
+header h1 {
+	color: #fff;
+	font: 32px "Helvetica Neue LT Pro - Th Ex";
+	font-weight: 400;
+	line-height: 14.16px;
+}
+
+header b {
+	font-weight: 1000;
+}
+
+nav {
+	padding: 30px;
+}
+
+nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+nav ul li {
+	list-style-image: url(./img/li.png);
+}
+
+
+nav ul li a {
+	color: #093500;
+	font-family: "Myriad Pro";
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #000;
+}
+
+nav ul li:first-child {
+	list-style: none;
+}
+
+main {
+	background-color: #eeeefb;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding: 30px;
+}
+
+main h2 {
+	font-size: 32px;
+}
+
+h2 {
+	color: #093500;
+	font-family: "Myriad Pro";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 14.16px;
+}
+
+main section {
+	margin-left: 50px;
+}
+
+p {
+	color: #093500;
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.heading {
+	font-size: 11px;
+	color: #80a60f;
+	padding-top: 25px;
+}
+
+.content {
+	padding: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#about {
+	width: 35%;
+}
+
+#info {
+/*	border: 1px solid #000;*/
+	width: 60%;
+	/*padding-left: 10px;*/
+}
+
+#info picture {
+/*	border: 1px solid #000;*/
+	/*width: calc(141px * 0.7);*/
+	width: 35%;
+	height: 55px;
+	padding: 20px;
+}
+
+.info-block {
+/*	border: 1px solid #000;*/
+	width: 90%;
+}
+
+#info picture img {
+	width: 100%;
+	height: calc(94px * 0.7);
+}
+
+#info section {
+/*	border: 1px solid #000;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+#info:after {
+	content: '.';
+	visibility: hidden;
+	display: table;
+}
+
+.h-line {
+	width: 1px;
+	height: 208px;
+	border-left: 1px solid #9a9aa8;
+	padding-left: 25px;
+	margin-left: 25px;
+}
+
+.line {
+	width: 80%;
+	margin: 0 auto;
+	border-width: 0 0 1px 0;
+	border-color: #9a9aa8;
+	height: 5px;
+}
+
+.container > .line {
+	width: 93%;
+	border-bottom-width: 5px;
+}
+
+footer {
+	padding: 25px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 675px) {
+	
+	* {
+		text-align: center;
+		margin: 0 auto !important;
+	}
+	
+	header {
+		padding-left: 0;
+	}
+
+
+	#content, #info, #info section, nav ul, main  {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	nav ul li {
+		list-style: none;
+	}
+
+	main > div {
+		margin-top: 25px;
+	}
+
+	#info picture img {
+		width: calc(141px * 0.7);
+		height: calc(94px * 0.7);
+	}
+
+}
+
+@media screen and (max-width: 425px) {
+	.h-line {
+		display: none;
+	}
+
+	.content, #info, #info section {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	#about, #info {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 347px) {
+	main h2 {
+		padding-top: 50px;
+		font-size: 150%;
+	}
+}
+
+/* FONTS */
+
+@font-face {
+	font-family: Tahoma;
+	src: url(./fonts/Tahoma.ttf);
+}
+
+@font-face {
+	font-family: "MyRiad Pro";
+	src: url(./fonts/myriadpro-regular.ttf);
+}
+
