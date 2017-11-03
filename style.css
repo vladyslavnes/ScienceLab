@@ -173,7 +173,7 @@ p {
 
 .line {
 	width: 80%;
-	margin: 0 auto;
+	margin: 15px auto 15px auto;
 	border-width: 0 0 1px 0;
 	border-color: #eeeefb;
 	height: 5px;
