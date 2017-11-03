@@ -9,17 +9,13 @@ html, body {
 	height: 100%;
 }
 
-.thin {
-	font-weight: 100;
-}
-
 .container {
 	max-width: 675px;
 	margin: 0 auto;
 }
 
 header {
-	padding: 35px 0 35px 30px;
+	padding: 27px 0 28px 35px;
 	background: -webkit-gradient(linear,left top, left bottom,from(#769715),to(#99cc01));
 	background: -webkit-linear-gradient(#769715,#99cc01);
 	background: -o-linear-gradient(#769715,#99cc01);
@@ -28,12 +24,18 @@ header {
 
 header h1 {
 	color: #fff;
-	font: 32px "Helvetica Neue LT Pro - Th Ex";
+	font-size: 32px;
+	font-family: "Helvetica Neue LT Pro - Th Ex", Helvetica;
 	font-weight: 400;
 	line-height: 14.16px;
+	width: 200px;
+	height: 25px;
+	color: #fff;
+
 }
 
 header b {
+	font-family: "Helvetica Neue LT Pro - Bd Ex", Helvetica;
 	font-weight: 1000;
 }
 
@@ -163,8 +165,9 @@ p {
 .h-line {
 	width: 1px;
 	height: 208px;
-	border-left: 1px solid #9a9aa8;
+	border-right: 1px solid #eeeefb;
 	padding-left: 25px;
+	margin-top: 5px;
 	margin-left: 25px;
 }
 
@@ -172,7 +175,7 @@ p {
 	width: 80%;
 	margin: 0 auto;
 	border-width: 0 0 1px 0;
-	border-color: #9a9aa8;
+	border-color: #eeeefb;
 	height: 5px;
 }
 
@@ -258,5 +261,15 @@ footer {
 @font-face {
 	font-family: "MyRiad Pro";
 	src: url(./fonts/myriadpro-regular.ttf);
+}
+
+@font-face {
+	font-family: "Helvetica Neue LT Pro - Bd Ex";
+	src: url(./fonts/helveticaneuelt-bdex.otf);
+}
+
+@font-face {
+	font-family: "Helvetica Neue LT Pro - Th Ex";
+	src: url(./fonts/myriadpro-regular.otf);
 }
 
